@@ -1,0 +1,108 @@
+ //Number//
+ 
+ main() {
+
+int a = 10;
+
+int b = 20;
+
+print(a + b);
+
+}
+ //String//
+ 
+ main() {
+
+String sayHello = “Hello World”;
+
+print(sayHello);
+
+}
+
+ //Dollar sign operator $//
+ 
+ var name = " Dastan";
+ print("Good Morning, $Aizhan"!);
+ 
+ //Boolean/logical: true or false//  !? 0,1
+ 
+ bool isValid = true;
+ 
+ //List//
+ 
+ List array = [1 , 2, 3 , 5 , 66, 7, 7, 8, 8, "name" ];
+ int y = 40;
+ 
+ case 1)print(array) [1]+y);
+ answer:41
+ 
+ case 2) String name = Hello";
+         String lol = "World";
+         pring (name+ " " + lol);
+ 
+ 
+ //Map//
+ main () {
+
+ Map student = { 'name' : Sanjar' , 'age’ : 23 , 'Branch' : 'Computer Science' }
+ print ("${student ["name"]}+ ${student ["age"]"});
+ 
+ 
+ 
+   ---- stdout, stdin----
+   void main () {
+    stdout.write (" Whats your favorite color");
+	String color = stdin.readLineSync();
+	priny("Your favorite color is $color");
+	}
+	
+	json.launch файл
+"program": "название файла",
+"console": "terminal"
+  
+ 
+  void main () {
+    stdout.write (" Whats your favorite color");
+	int color = int.parse (stdin.readLineSync));
+	priny("Your favorite color is $color");
+	}
+	
+	void main(){
+  String number = "123";
+  int name = 123;
+  name.toString();
+  print("${int.parse(number)}");
+  }
+ 
+ 
+ //Runes//
+ 
+ void main(){
+var heart_symbol = '\u2665';
+var laugh_symbol = '\u{1f600}';
+print(heart_symbol);
+print(laugh_symbol);
+}
+
+
+ //Dynamic and Const//
+ Final - неизменяемый, но инициализируемый
+
+Var – изменяемый, но запоминающим типом
+
+Dynamic – изменяемый, с возможностью изменить ладе тип данных
+
+Const – неизменяемый, не инициализируемый
+
+ //Оператор %//
+  void main () {
+  var a = 10;
+  var b = 20;
+  print (b % a);
+ }
+ 
+  для четных и не четных
+   если не четные - 0
+   если четные - 1
+   
+ 
