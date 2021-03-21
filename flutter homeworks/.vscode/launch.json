@@ -11,7 +11,7 @@
             "name": "Dart",
             "request": "launch",
             "type": "dart",
-            "program": "lesson4_2.dart",
+            "program": "test2.dart",
             "console":"terminal"
             
 

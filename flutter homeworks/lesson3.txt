@@ -1,4 +1,0 @@
---Коментарии в Dart--
-/* Multi-line comment */ 
-// single line comment //
-/// for doc comment  ///
