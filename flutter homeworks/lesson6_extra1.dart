@@ -18,6 +18,7 @@ void main1() {
 void main2() {
   List array = [1, 3, 4, 5, 6];
   print(" first element is ${array[0]} ");
+  //or (||) print(array.first);
 }
 //--end 2--//
 
