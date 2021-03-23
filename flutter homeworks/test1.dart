@@ -1,10 +1,10 @@
 void main() {
-  var s = "(]";
+  var s = "([)]";
 
-  if (s != "(]") {
+  if (s == "([)]") {
+    print("false");
+  } else {
     //!!!(== )equally равно;!!! запомнить ошибка если (=)
     print("true");
-  } else {
-    print("false");
-  } // result is true
+  } // result is false
 }
