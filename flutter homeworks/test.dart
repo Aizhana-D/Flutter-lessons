@@ -2,9 +2,10 @@ void main() {
   var s = "(]";
 
   if (s != "(]") {
+    //
     //!!!(== )equally равно;!!! запомнить ошибка если (=)
-    print("true");
+    print("equal");
   } else {
-    print("false");
+    print("not equal");
   } // result is true
 }

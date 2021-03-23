@@ -108,18 +108,15 @@ void main() {
   } // result is false
 }
 
-//--4  to figer out why shows false ""== ,=! "when use the wrong variables
-// what is the difference??
+//--4
 void main() {
   var s = "(]";
 
   if (s != "(]") {
-    //
     //!!!(== )equally равно;!!! запомнить ошибка если (=)
     print("true");
   } else {
     print("false");
   } // result is true
 }
-
 //-- end 4--//
