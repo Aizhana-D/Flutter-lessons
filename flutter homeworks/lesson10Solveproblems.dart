@@ -29,4 +29,13 @@ int highestDigit(String a) {
   }
   return x;
 }
+ //--
+ import 'dart:io';
+
+main3() {
+  stdout.write("Enter number");
+  var x = stdin.readLineSync()!.split('');
+  x.sort();
+  print(x.last);
+}
 //--End Solve problems--//
