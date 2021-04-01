@@ -27,13 +27,14 @@ List numberSplit(int i4) {
 //--end 1--//
 
 //--2--//
-main() {
+main2() {
   int a1 = addUp(12);
   print(a1);
 }
-int addUp(i);{
-  int a=0; // пустышка
-  for (int =0; i<=i; i++) a=a+i; // сумма всех элементов
+
+int addUp(int x) {
+  int a = 0; // пустышка
+  for (int i = 1; i <= x; i++) a = a + i; // сумма всех элементов
   return a;
 }
 //--2
@@ -111,4 +112,25 @@ bool isTrue(String input) {
   }
 }
 
+//--3 second way with contains
+main() {
+  String input = "15=15";
+  print(isTrue(input));
+}
+
+bool isTrue(String input) {
+  var x;
+  var y;
+  if (input.contains("=")) {
+    x = input.split("=");
+    y = int.parse(x[0]) == int.parse(x[1]);
+  } else if (input.contains(">")) {
+    x = input.split(">");
+    y = int.parse(x[0]) > int.parse(x[1]);
+  } else if (input.contains("<")) {
+    x = input.split("<");
+    y = int.parse(x[0]) < int.parse(x[1]);
+  }
+  return y;
+}
 //--end 3--//
