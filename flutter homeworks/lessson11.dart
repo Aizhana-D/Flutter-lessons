@@ -22,16 +22,6 @@ main() {
   }
   print(b);
 }
-
-//--2
-main() {
-  List a = ([1, 2, "a", "b", "123"]);
-  List b = [];
-  for (int i = 0; i < a.length - 1; i++) {
-    if ((a[i] is int)) b.add(a[i]);
-  }
-  print(b);
-}
 //--End 2--//
 
 //--3--//
