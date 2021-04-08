@@ -23,7 +23,38 @@ class Country {
 }
 
 //--End 1 --//
+//
 //--2--//
+//--2 right version
+void main() {
+  var car = new Car();
+  car.carName = "Tesla Roadster";
+  car.carColor = "black";
+  car.carPower = "772 km/h";
+  car.carPrice = 200000;
+  //at the end
+  String s = car.func();
+  print(s);
+}
+
+//Определение класса
+class Car {
+  String? carName;
+  String? carColor;
+  String? carPower;
+  int? carPrice;
+  //Класс функция
+  String func() {
+    /*print("Tesla: ${carName}");
+    /print("Tesla: ${carColor}");
+    print("Tesla: ${carPower}");
+     print("Tesla: ${carPrice}");
+    */
+    return "$carName, $carColor, $carPower, $carPrice ";
+  }
+}
+
+//--2
 void main() {
   var car = new Car();
   String s = car.func();
