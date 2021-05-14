@@ -23,8 +23,8 @@ class _MyAppState extends State<MyApp> {
               child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
+              //--1
               Container(
-                margin: EdgeInsets.all(25),
                 child: TextButton(
                   style: ButtonStyle(
                       backgroundColor:
@@ -40,6 +40,7 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
               ),
+              //--2
               Container(
                 child: TextButton(
                   child: Text(
@@ -51,17 +52,16 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
               ),
+              //--3
               Container(
                 child: ElevatedButton(
-                  child: Text(
-                    'ElavatedButton',
-                    style: TextStyle(fontSize: 20.0),
-                  ),
-                  onPressed: () {
-                    print("ElavatedButton");
-                  },
-                ),
+                    child: Text(
+                      'ElavatedButton',
+                      style: TextStyle(fontSize: 20.0),
+                    ),
+                    onPressed: () => null),
               ),
+              //--3
               Container(
                 child: FloatingActionButton(
                   child: Icon(Icons.add),
@@ -71,6 +71,7 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
               ),
+              //--4
               Container(
                 child: DropdownButton<String>(
                   value: _chosenValue,
@@ -96,6 +97,7 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
               ),
+              //--5
               Container(
                 child: IconButton(
                   icon: Icon(Icons.fact_check_outlined),
@@ -106,6 +108,7 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
               ),
+              //--6
               Container(
                 child: InkWell(
                   splashColor: Colors.black,
@@ -116,6 +119,7 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
               ),
+              //--7
               Container(
                 child: PopupMenuButton(
                   itemBuilder: (context) => <PopupMenuEntry<Object>>[
@@ -142,6 +146,22 @@ class _MyAppState extends State<MyApp> {
                     Icons.access_alarm,
                     size: 50,
                     color: Colors.orange,
+                  ),
+                ),
+              ),
+              Container(
+                child: OutlinedButton(
+                  child: Text('Outline Button'),
+                  onPressed: () {
+                    print('Outline button');
+                  },
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.red),
+                      ),
+                    ),
                   ),
                 ),
               ),
